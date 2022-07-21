@@ -1,6 +1,8 @@
 body {
     font-family: 'Josefin Sans';
-    background-color: #FFFAFB;
+    /* background-color: #fffafb; */
+    background-color: #f8faf2;
+
 }
 
 * {
@@ -64,11 +66,13 @@ body {
 } */
 .hero-banner-img {
     position: absolute;
+    border-radius: 20px;
     top: 0px;
-    width: 700px;
-    height: 1200px;
-    margin-top: -430px;
+    width: 600px;
+    height: 750px;
+    margin-top: -330px;
     right: 40px;
+
 }
 
 .exercise-card {
@@ -101,8 +105,8 @@ body {
 }
 
 .search-btn:hover {
-    color: #FF2625 !important;
-    border: 1px solid #FF2625 !important;
+    color: #95D600 !important;
+    border: 1px solid #0e32e8 !important;
 }
 
 .exercise-video {

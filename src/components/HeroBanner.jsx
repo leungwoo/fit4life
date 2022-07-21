@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
-import fitness from '../assets/images/fitness.png';
+import fitness from '../assets/images/Richard-10.JPEG';
 import TouchAppRoundedIcon from '@mui/icons-material/TouchAppRounded';
 
 const HeroBanner = () => {
@@ -13,10 +13,10 @@ const HeroBanner = () => {
             <Typography color='#95D600' fontSize='26px' fontWeight='600'>
                 Fit4Life
             </Typography>
-            <Typography fontWeight='700' mt='5px' mb='5px'
-                sx={{ fontSize: { lg: '44px', xs: '40px' } }}>
+            <Typography fontWeight='700' mt='10px' mb='10px'
+                sx={{ fontSize: { lg: '54px', xs: '45px' } }}>
                 Focus, Discipline <br />  and
-                Results
+                Commitment
             </Typography>
             <Typography lineHeight='35px' mb={4}>
                 Exercise those fingers and check out the exercises below!
@@ -25,19 +25,22 @@ const HeroBanner = () => {
                 sx={{
                     color: '#95D600',
                     backgroundColor: 'black',
-                    fontSize: '10px',
-                    fontWeight: "bold",
-                    padding: '10px'
+                    fontSize: { lg: '20px', xs: '14px' },
+                    fontWeight: "100",
+                    padding: '8px',
+                    textTransform: 'none',
+                    width: { lg: '350px', xs: '250px' },
                 }} >
-                <TouchAppRoundedIcon /> Click to grow some muscles
+                <TouchAppRoundedIcon /> Click to GROW some muscles
             </Button>
             <Typography
                 fontWeight={600}
                 color='#95D600'
+                mt='15px'
                 sx={{
                     opacity: '0.1',
                     display: { lg: 'block', xs: 'none' }
-                }} fontSize='200px'>
+                }} fontSize='250px'>
                 Exercise
             </Typography>
             <img src={fitness} alt='banner' className="hero-banner-img" />
