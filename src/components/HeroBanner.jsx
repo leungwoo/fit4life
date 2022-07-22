@@ -2,6 +2,7 @@ import { Box, Button, Typography } from '@mui/material';
 import React from 'react';
 import fitness from '../assets/images/Richard-10.JPEG';
 import TouchAppRoundedIcon from '@mui/icons-material/TouchAppRounded';
+import fist from '../assets/icons/fist.jpeg';
 
 const HeroBanner = () => {
     return (
@@ -11,7 +12,7 @@ const HeroBanner = () => {
                 ml: { sm: '50px' }
             }} p='20px' position='relative'>
             <Typography color='#95D600' fontSize='26px' fontWeight='600'>
-                Fit4Life
+                <img src={fist} width='40px' /> Fit4Life...train hard or go home
             </Typography>
             <Typography fontWeight='700' mt='10px' mb='10px'
                 sx={{ fontSize: { lg: '54px', xs: '45px' } }}>
@@ -21,7 +22,7 @@ const HeroBanner = () => {
             <Typography lineHeight='35px' mb={4}>
                 Exercise those fingers and check out the exercises below!
             </Typography>
-            <Button variant='outlined' href='#exercises'
+            <Button className='search-btn' variant='outlined' href='#exercises'
                 sx={{
                     color: '#95D600',
                     backgroundColor: 'black',
