@@ -24,7 +24,7 @@ const Navbar = () => {
                 gap='30px'
                 fontSize='24px'
                 alignItems='flex-end'>
-                <Link to='/' style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '3px solid #95D600' }}> Home</Link>
+                <Link to='/' style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '2px solid #95D600' }}> Home</Link>
                 <a href='#exercises' style={{ textDecoration: 'none', color: '#3A1212' }}>Exercises</a>
 
                 <a href='https://reactjs.org/' target="_blank" rel="noopener noreferrer">
