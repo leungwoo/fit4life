@@ -7,7 +7,18 @@ import EquipmentImage from '../assets/icons/equipment.png';
 
 const Detail = ({ exerciseDetail }) => {
     const { bodyPart, name, gifUrl, target, equipment } = exerciseDetail;
-
+    const extraDetail = [{
+        icon: BodyPartImage,
+        name: bodyPart,
+    },
+    {
+        icon: TargetImage,
+        name: target,
+    },
+    {
+        icon: EquipmentImage,
+        name: equipment,
+    },];
     return (
         <Stack
             gap='60px'
@@ -21,10 +32,16 @@ const Detail = ({ exerciseDetail }) => {
                 <Typography variant='h6'>
                     {name} is one of the best exercises to target your {target}
                 </Typography>
-                <Typography variant='h5'>
-                    Equipment needed: {equipment}
-                </Typography>
 
+                {extraDetail.map((item) => (
+                    <Stack key={item.name} direction="row" sx={{ gap: '20px', alignItems: 'center' }} >
+
+                        <Button sx={{ border: '#95D600 1px solid', backgroundColor: "#fff", borderRadius: '50%', width: '100px', height: '100px' }}>
+                            <img src={item.icon} />
+                        </Button>
+                        <Typography textTransform='capitalize' variant='6'>{item.name}</Typography>
+                    </Stack>
+                ))}
 
             </Stack>
         </Stack>
