@@ -29,7 +29,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
                 Showing <span style={{
                     color: "#95D600", fontWeight:
                         'bold'
-                }}>Results</span>
+                }}>Results</span> from Search
             </Typography>
             <Stack direction='row'
                 flexWrap='wrap'

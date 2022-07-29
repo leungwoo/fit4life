@@ -14,13 +14,13 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
                 window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
             }}
             sx={{
-                borderTop: bodyPart === item ? '4px solid #95D600' : '',
-                backgroundColor: '#FFF',
-                borderBottomLeftRadius: '20px',
-                width: '270px',
+                borderTop: bodyPart === item ? '10px solid #95D600' : '',
+                backgroundColor: '#000',
+                borderRadius: '0 0 20px 20px',
+                width: '320px',
                 height: '280px',
                 cursor: 'pointer',
-                gap: '47px'
+                gap: '40px'
             }}
 
         >
@@ -28,7 +28,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
             <Typography
                 fontSize='24px'
                 fontWeight='bold'
-                color='#3A1212'
+                color='#95D600'
                 textTransform='capitalize'>{item}</Typography>
         </Stack>
     );

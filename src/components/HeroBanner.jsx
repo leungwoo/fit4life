@@ -27,7 +27,7 @@ const HeroBanner = () => {
                     color: '#95D600',
                     backgroundColor: 'black',
                     fontSize: { lg: '20px', xs: '14px' },
-                    fontWeight: "100",
+                    fontWeight: "600",
                     padding: '8px',
                     textTransform: 'none',
                     width: { lg: '350px', xs: '250px' },
@@ -35,7 +35,7 @@ const HeroBanner = () => {
                 <TouchAppRoundedIcon /> Click to GROW some muscles
             </Button>
             <Typography
-                fontWeight={600}
+                fontWeight={800}
                 color='#95D600'
                 mt='15px'
                 sx={{

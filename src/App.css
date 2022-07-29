@@ -80,7 +80,7 @@ body {
     height: 445px;
     background: rgba(0, 0, 0, 0.075);
     border-top: 10px solid #95D600;
-    border-radius: 20px;
+    border-radius: 0 0 20px 20px;
     padding: 0 10px 10px 10px;
     text-decoration: none;
     display: flex;
@@ -108,8 +108,10 @@ body {
 }
 
 .search-btn:hover {
-    color: #95D600 !important;
-    border: 2px solid #080809 !important;
+    /* background: linear-gradient(90.41deg, #9a9703 1.14%, #ddc806 100%); */
+    color: #0c0c0b !important;
+    border: 3px solid #080809 !important;
+    box-shadow: 20px 20px 50px #95D600;
 }
 
 .exercise-video {
@@ -128,9 +130,9 @@ body {
     }
 
 
-    /* .react-horizontal-scrolling-menu--scroll-container {
-        width: 500px;
-    } */
+    .react-horizontal-scrolling-menu--scroll-container {
+        width: 800px;
+    }
 
     .left-arrow,
     .right-arrow {
