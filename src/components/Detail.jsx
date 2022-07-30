@@ -26,20 +26,19 @@ const Detail = ({ exerciseDetail }) => {
             <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />
             <Stack
                 sx={{ gap: { lg: '35px', xs: '20px' } }}>
-                <Typography variant='h3' textTransform="capitalize" sx={{ color: '#95D600' }}>
+                <Typography variant='h3' textTransform="capitalize" sx={{ color: '#95D600', fontWeight: '600' }}>
                     {name}
                 </Typography>
-                <Typography variant='h6'>
+                <Typography variant='h6' textTransform="capitalize">
                     {name} is one of the best exercises to target your {target}
                 </Typography>
 
                 {extraDetail.map((item) => (
                     <Stack key={item.name} direction="row" sx={{ gap: '20px', alignItems: 'center' }} >
-
                         <Button sx={{ border: '#95D600 1px solid', backgroundColor: "#fff", borderRadius: '50%', width: '100px', height: '100px' }}>
-                            <img src={item.icon} />
+                            <img src={item.icon} alt={bodyPart} style={{ width: '50px', height: '50px' }} />
                         </Button>
-                        <Typography textTransform='capitalize' variant='6'>{item.name}</Typography>
+                        <Typography textTransform='capitalize' variant='6' fontWeight={600}>{item.name}</Typography>
                     </Stack>
                 ))}
 
