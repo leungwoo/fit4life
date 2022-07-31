@@ -12,7 +12,7 @@ const HeroBanner = () => {
                 ml: { sm: '50px' }
             }} p='20px' position='relative'>
             <Typography color='#95D600' fontSize='26px' fontWeight='600'>
-                <img src={fist} width='40px' /> Fit4Life...train hard or go home
+                <img src={fist} width='40px' /> TrainHard or go home
             </Typography>
             <Typography fontWeight='700' mt='10px' mb='10px'
                 sx={{ fontSize: { lg: '54px', xs: '45px' } }}>
