@@ -1,52 +1,26 @@
 import { Box, Button, Stack, Typography } from '@mui/material';
 import React, { useState, useEffect } from 'react';
-
+import logo from '../assets/images/Logo-2.png';
 const Footer = () => {
-    const [textSize, setTextSize] = useState("40px");
-    const [textColor, setTextColor] = useState("#000");
-    const [buttonText, setButtonText] = useState("Grow");
-    const [showText, setShowText] = useState(true);
-
-    // useEffect = () => {
-    //     console.log("mounting");
-    // };
-
 
     return (
-        <Stack
-            justifyContent="center"
-            alignItems='center'
-            pb='20px' >
-            <Typography
-                fontWeight={700}
-                mb='50px'
-                textAlign='center'
-                sx={{ fontSize: { lg: '44px', xs: '30px' } }}>
-                <h1 style={{ fontSize: textSize, color: textColor }}>Hit Grow Blue to make me Grow</h1>
-            </Typography>
-            <Typography><h1>Hit Red button to don't show this text</h1></Typography>
-            <Box spacing={3} >
-                <Button
-                    onClick={() => {
-                        setTextSize(textSize === '40px' ? '100px' : '40px');
-                        setButtonText(buttonText === 'Grow' ? 'Shrink' : 'Grow');
-                        setTextColor(textColor === '#000' ? '#95D600' : '#000');
-                    }}
-                    variant='contained'
-                    alignItem='center'> {buttonText}
-                </Button>
-                <Button
-                    variant='contained'
-                    color="error"
-                    onClick={() => {
-                        setShowText(!showText);
-                    }}>
-                    Hide text
-                </Button>
 
-            </Box>
-
-        </Stack>
+        <Box bgcolor='#95D600' marginTop={10}>
+            <Stack
+                gap='1px'
+                alignItems='center'
+                px='40px'
+                pt='4px'
+                color='#000'>
+                <img src={logo}
+                    alt="log"
+                    width='150px'
+                    height='100px' />
+                <Typography variant='5'
+                    fontWeight={900}
+                    pb='10px'>Or Go Home...</Typography>
+            </Stack>
+        </Box>
 
     );
 };
