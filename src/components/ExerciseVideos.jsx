@@ -26,7 +26,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                         href={`http://www.youtube.com/watch?v=${item.video.videoId}`}
                         target='_blank'
                         rel='noreferrer'>
-                        <img src={item.video.thumbnails[0].url} alt={item.video.title} />
+                        <img src={item.video.thumbnails[0].url} alt={item.video.title} className="exercise-image" />
                         <Box style={{ color: '#000' }}>
                             <h3> {item.video.channelName}</h3>
                             <h4>{item.video.description}</h4>

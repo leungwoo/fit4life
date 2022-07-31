@@ -9,26 +9,28 @@ const SearchExercises = ({ setBodyPart, setExercises, bodyPart }) => {
     const [bodyParts, setBodyParts] = useState([]);
 
     useEffect(() => {
-        const fetchExerciseData = async () => {
-            const bodyPartsData = await fetchData
-                ('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
+        const fetchExercisesData = async () => {
+            const bodyPartsData = await fetchData('https://exercisedb.p.rapidapi.com/exercises/bodyPartList', exerciseOptions);
 
             setBodyParts(['all', ...bodyPartsData]);
         };
-        fetchExerciseData();
+
+        fetchExercisesData();
     }, []);
 
     const handleSearch = async () => {
         if (search) {
-            const exercisesData = await fetchData
-                ('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
-            console.log(exercisesData);
+            const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
 
-            const searchedExercises = exercisesData.filter((exercise) => exercise.name.toLowerCase().includes(search)
-                || exercise.target.toLowerCase().includes(search)
-                || exercise.equipment.toLowerCase().includes(search)
-                || exercise.bodyPart.toLowerCase().includes(search)
+            const searchedExercises = exercisesData.filter(
+                (item) => item.name.toLowerCase().includes(search)
+                    || item.target.toLowerCase().includes(search)
+                    || item.equipment.toLowerCase().includes(search)
+                    || item.bodyPart.toLowerCase().includes(search),
             );
+
+            window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' });
+
             setSearch('');
             setExercises(searchedExercises);
         }
@@ -85,7 +87,9 @@ const SearchExercises = ({ setBodyPart, setExercises, bodyPart }) => {
                 <HorizontalScrollbar
                     data={bodyParts}
                     bodyPart={bodyPart}
-                    setBodyPart={setBodyPart} />
+                    setBodyPart={setBodyPart}
+                    isBodyParts
+                />
             </Box>
         </Stack>
     );
