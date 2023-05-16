@@ -16,7 +16,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
             <Box
                 width='100%'
                 position='relative'
-                sx={{ p: '20px', position: 'relative' }}>
+                sx={{ p: '20px', position: 'relative', width:{xs:'387px',lg:'100%'}}}>
                 {targetMuscleExercises.length ?
                     <HorizontalScrollbar data={targetMuscleExercises} />
                     : <Loader />}
@@ -26,7 +26,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
                 Similiar <span style={{ color: '#96D500' }}> Equipment</span> exercises
             </Typography>
             <Box
-                sx={{ position: 'relative', width: '100%', p: '20px' }}>
+                sx={{ position: 'relative', width:{xs:'387px',lg:'100%'}, p: '20px' }}>
                 {equipmentExercises.length ?
                     <HorizontalScrollbar data={equipmentExercises} />
                     : <Loader />}

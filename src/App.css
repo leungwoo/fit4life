@@ -118,7 +118,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 387px;
+    width: 360px;
     height: 381px;
     text-decoration: none;
 
@@ -126,9 +126,9 @@ body {
 
 .exercise-image {
     height: 200px;
-    width: 350px;
+    width: 320px;
     object-fit: cover;
-    ;
+
 }
 
 @media screen and (max-width:1200px) {

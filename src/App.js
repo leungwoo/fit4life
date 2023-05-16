@@ -10,7 +10,7 @@ import "./App.css";
 
 const App = () => {
     return (
-        <Box width="400px" sx={{ width: { xl: '1488px' } }}>
+        <Box width="400px" sx={{ width:'100%' }}>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />

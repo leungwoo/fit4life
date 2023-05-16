@@ -12,7 +12,7 @@ const HeroBanner = () => {
                 ml: { sm: '50px' }
             }} p='20px' position='relative'>
             <Typography color='#95D600' fontSize='26px' fontWeight='600'>
-                <img src={fist} width='40px' /> TrainHard or go home
+                <img src={fist} width='40px' alt="fist" /> TrainHard or go home
             </Typography>
             <Typography fontWeight='700' mt='10px' mb='10px'
                 sx={{ fontSize: { lg: '54px', xs: '45px' } }}>
@@ -41,7 +41,7 @@ const HeroBanner = () => {
                 sx={{
                     opacity: '0.1',
                     display: { lg: 'block', xs: 'none' }
-                }} fontSize='250px'>
+                }} fontSize='250px' alignItems="center" justifyContent="center">
                 Exercise
             </Typography>
             <img src={fitness} alt='banner' className="hero-banner-img" />

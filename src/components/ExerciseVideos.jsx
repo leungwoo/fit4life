@@ -17,7 +17,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                 alignItems='center'
                 sx={{
                     flexDirection: { lg: 'row' },
-                    gap: { lg: '20px', xs: '0' },
+                    gap: { lg: '20px', xs: '20px' },
                     justifyContent: 'center'
                 }}>
                 {exerciseVideos?.slice(0, 6).map((item, index) => (
