@@ -4,9 +4,11 @@ import { AppBar, Stack } from '@mui/material';
 import Logo from '../assets/images/Logo-2.png';
 import facebook from '../assets/icons/goldfacebook.png';
 import instagram from '../assets/icons/goldinstagram.png';
+import { useMediaQuery } from 'react-responsive';
 
 
 const Navbar = () => {
+    const isMobile = useMediaQuery({maxWidth:768})
     return (
 
         <Stack direction='row' justifyContent='space-between' alignItems='center'
@@ -27,6 +29,7 @@ const Navbar = () => {
             >
                 <Link to='/' style={{ textDecoration: 'none', color: '#3A1212', borderBottom: '2px solid #95D600' }}> Home</Link>
                 <a href='#exercises' style={{ textDecoration: 'none', color: '#3A1212' }}>Exercises</a>
+               {!isMobile &&  
                 <Stack direction='row'
                     alignItems="center"
                 >
@@ -36,7 +39,7 @@ const Navbar = () => {
                     <a href='https://reactjs.org/' target="_blank" rel="noopener noreferrer">
                         <img src={instagram} alt='instagram' style={{ width: '90px', height: '90px' }} />
                     </a>
-                </Stack>
+                </Stack>}
 
             </Stack>
         </Stack>

@@ -6,7 +6,7 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
     if (!exerciseVideos.length) return "loading...";
 
     return (
-        <Box sx={{ marginTop: { lg: '200px', xs: '20px' } }} p='20px'>
+        <Box sx={{ marginTop: { lg: '200px', xs: '20px' }}}  p='20px' >
             <Typography
                 variant='h4'
                 mb='30px'>
@@ -17,7 +17,8 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                 alignItems='center'
                 sx={{
                     flexDirection: { lg: 'row' },
-                    gap: { lg: '20px', xs: '0' }
+                    gap: { lg: '20px', xs: '0' },
+                    justifyContent: 'center'
                 }}>
                 {exerciseVideos?.slice(0, 6).map((item, index) => (
                     <a
